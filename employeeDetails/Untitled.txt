@@ -1,0 +1,4 @@
+function displayJavascriptEmployees() {
+    const javascriptEmployees = employees.filter(employee => employee.specialization === 'Javascript');
+        const javascriptEmployeeDisplay = javascriptEmployees.map((employee, index) => `<p>${employee.id}: ${employee.name}: ${employee.name} - ${employee.department} - $${employee.salary} - ${specialization}</p>`).join('');
+        document.getElementById('employeesDetails').innerHTML = javascriptEmployeeDisplay;
